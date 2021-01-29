@@ -13,7 +13,7 @@ export class ApiService {
   getAllReservations():Observable<Client[]> {
     return this.http.get<Client[]>(this.ALL_RESTAURANTS_URL + '/reservations');
   }
-  private BASE_URL = "http://localhost:8081";
+  private BASE_URL = "https://restaurant-manager-tn-back.herokuapp.com";
   public ALL_RESTAURANTS_URL = `${this.BASE_URL}/restaurants`;
 
 
